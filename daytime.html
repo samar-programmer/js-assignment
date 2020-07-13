@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <body>
+        <script type="text/javascript">
+            var date = new Date();
+            var days = ['Sunday.','Monday.','Tuesday.','Wednesday.','Thursday.','Saturday.'];
+            var day = days[date.getDay()];  
+            var hours = date.getHours();
+            var AMPM = hours>=12 ? "AM" : "PM";
+            hours = hours%12;
+            hours = hours ? hours : 12;  
+        
+            window.onload = function() {
+                document.getElementById("dae").innerHTML = "Today is : "+day;
+                document.getElementById("tme").innerHTML = "Current time is : "+hours+" "+AMPM+":"+date.getMinutes()+":"+date.getSeconds();
+            }
+            
+        </script>
+
+      <p id="dae"></p><br>
+      <p id="tme"></p>
+      
+    </body>
+    </head>
+</html>
