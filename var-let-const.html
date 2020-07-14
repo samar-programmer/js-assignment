@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day1</title>
+</head>
+<body>
+    <h3>VAR vs LET vs CONST</h3>
+    <p>var is keyword - if we declare a variable with var ,then variable is consider to be a global scope,if variable declare with var inside the function,it can be used inside the function only</p><br>
+    <p>let is keyword - let is used for block level access(only inside the curly braces{})</p><br>
+    <p>const is keyword - const is used for block level access but we cannot REASSIGNED to the const declared variable</p>
+    <script>
+        var a = 10;//a have global 
+        console.log("Global Access");
+        console.log(a);
+        {
+            console.log("block 1");
+            console.log(`inside the block also global variable a worked a = ${a}`);
+            let b = 20;
+            const c= 30;
+            console.log(`block 1, b = ${b},we cannot used b block 2`);
+            console.log(`we cannot use const value in block 2 c = ${c}`);
+            //we cannot reassign to to the const variable
+            c=40;
+            console.log(c);//error occur
+        }
+        {
+            //cannot use let and const value in another block
+            console.log("block 2");
+            console.log({b,c});//error occur
+        }
+    </script>
+</body>
+</html>

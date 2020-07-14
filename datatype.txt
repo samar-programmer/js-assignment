@@ -1,0 +1,9 @@
+Dynamic typing - var,let,const
+
+Data types
+1) undefined - it is a primitive value automatically assigned to variables that have just been declared, or to formal arguments for which there are no actual arguments.
+2) Boolean - true/false
+3) Number - integers
+4) String - sequence of char
+6) null - empty value but it not zero
+7) object - Special non-data but structural type for any constructed object instance also used as data structures
