@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day1</title>
+</head>
+<body>
+    <script>
+
+        var a = {name:"sasikumar",age:22,email:"samarprogrammer7@gmail.com"};
+        var b = {name:"samar",age:21,email:"programmer7@gmail.com"};
+        var c = {name:"sasisamatr",age:22,email:"samar7@gmail.com"};
+
+        //console.time() is used to start timer
+        console.time("timer");
+
+        //console.log() function is used for testing purpose,we can see the output in debug console in crome.
+        console.log("console.log() function is used for testing purpose,we can see the output in debug console in crome.");
+
+        //console.error() function used to writes an error message in debugging console.
+        console.error("console.error()  function is used to writes an error message in debugging console.");
+        
+        //console.warn() function is used to write a warning to the console.
+        console.warn("console.warn() function is used to write a warning to the console.");
+    
+        //console.table() function is used to display data in the console in a nice tabular format.
+        console.table({a,b,c});
+        
+        //console.timeEnd("lable") used to stop the timer
+        //label - The name of the timer to stop. Once stopped, the elapsed time is automatically displayed in the Web Console along with an indicator that the time has ended.
+        console.timeEnd("timer");
+    </script>
+</body>
+</html>
