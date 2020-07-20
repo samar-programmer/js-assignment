@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="calculator.js">
+
+    </script>
+</head>
+<body>
+    <form>
+        1st Number : <input type="text" id="firstNumber" /><br>
+        2nd Number: <input type="text" id="secondNumber" /><br>
+        <input type="button" onClick="add()" Value="Add" />
+        <input type="button" onClick="sub()" Value="Sub" />
+        <input type="button" onClick="mul()" Value="Multiply" />
+        <input type="button" onClick="divide()" Value="Divide" />
+        <input type="button" onClick="sqt()" Value="sqrt" />
+        <input type="button" onClick="per()" Value="percentage" />
+
+
+        <p>
+            note:for square root operation use 1st Number<br>
+            note:for percentage - Firstnumber as percentage
+            second number as value,
+        </p>
+
+
+        <p id="result"></p>
+    </form>
+</body>
+</html>
